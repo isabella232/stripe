@@ -8,6 +8,11 @@
 - explore: stripe_balance_history__fee_details
 
 - explore: stripe_charges
+  joins:
+    - join: stripe_customers
+      type: left_outer
+      sql_on: ${stripe_charges.customer} = ${stripe_customers.id}
+      relationship: many_to_one
 
 - explore: stripe_charges__fee_details
 
