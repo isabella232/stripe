@@ -20,7 +20,9 @@
     sql: ${TABLE}.canceled_at
 
   - dimension: current_period_end
-    type: number
+    type: time
+    timeframes: [time, date, week, month]
+    datatype: epoch
     sql: ${TABLE}.current_period_end
 
   - dimension: current_period_start
