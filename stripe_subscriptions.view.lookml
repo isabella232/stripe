@@ -47,9 +47,11 @@
     type: string
     sql: ${TABLE}.object
 
+  # Plan object. https://stripe.com/docs/api/curl#create_plan
+
   - dimension: plan__amount
     type: number
-    sql: ${TABLE}.plan__amount
+    sql: ${TABLE}.plan__amount / 100
 
   - dimension: plan__created
     type: time
@@ -123,3 +125,6 @@
     type: count
     drill_fields: [id, plan__name]
 
+#   - measure: new_mrr
+#     type: sum
+#     sql: ${plan__amount}
