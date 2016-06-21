@@ -16,7 +16,9 @@
     sql: ${TABLE}.cancel_at_period_end
 
   - dimension: canceled_at
-    type: number
+    type: time
+    timeframes: [time, date, week, month]
+    datatype: epoch
     sql: ${TABLE}.canceled_at
 
   - dimension: current_period_end
@@ -26,7 +28,9 @@
     sql: ${TABLE}.current_period_end
 
   - dimension: current_period_start
-    type: number
+    type: time
+    timeframes: [time, date, week, month]
+    datatype: epoch
     sql: ${TABLE}.current_period_start
 
   - dimension: customer
@@ -34,7 +38,9 @@
     sql: ${TABLE}.customer
 
   - dimension: ended_at
-    type: number
+    type: time
+    timeframes: [time, date, week, month]
+    datatype: epoch
     sql: ${TABLE}.ended_at
 
   - dimension: object
@@ -46,7 +52,9 @@
     sql: ${TABLE}.plan__amount
 
   - dimension: plan__created
-    type: number
+    type: time
+    timeframes: [time, date, week, month]
+    datatype: epoch
     sql: ${TABLE}.plan__created
 
   - dimension: plan__currency
@@ -86,7 +94,9 @@
     sql: ${TABLE}.quantity
 
   - dimension: start
-    type: number
+    type: time
+    timeframes: [time, date, week, month]
+    datatype: epoch
     sql: ${TABLE}.start
 
   - dimension: status
@@ -94,12 +104,20 @@
     sql: ${TABLE}.status
 
   - dimension: trial_end
-    type: number
+    type: time
+    timeframes: [time, date, week, month]
+    datatype: epoch
     sql: ${TABLE}.trial_end
 
   - dimension: trial_start
-    type: number
+    type: time
+    timeframes: [time, date, week, month]
+    datatype: epoch
     sql: ${TABLE}.trial_start
+
+  - measure: sum_of_plan_amount
+    type: sum
+    sql: ${plan__amount}
 
   - measure: count
     type: count
