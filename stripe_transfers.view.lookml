@@ -1,5 +1,5 @@
 - view: stripe_transfers
-  sql_table_name: stripeblook.stripe_transfers
+  sql_table_name: stripeblook.stripe_transfers # https://stripe.com/docs/api/curl#transfer_object
   fields:
 
   - dimension: id
@@ -13,11 +13,11 @@
 
   - dimension: amount
     type: number
-    sql: ${TABLE}.amount
+    sql: ${TABLE}.amount / 100 # Amount (in cents) to be transferred to your bank account
 
   - dimension: amount_reversed
     type: number
-    sql: ${TABLE}.amount_reversed
+    sql: ${TABLE}.amount_reversed / 100 # Amount in cents reversed (can be less than the amount attribute on the transfer if a partial reversal was issued).
 
   - dimension: balance_transaction
     type: string
@@ -71,6 +71,7 @@
   - dimension_group: date
     type: time
     timeframes: [time, date, week, month]
+    datatype: epoch
     sql: ${TABLE}.date
 
   - dimension: description

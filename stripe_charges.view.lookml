@@ -192,6 +192,14 @@
     type: string
     sql: ${TABLE}.status
 
+  - measure: sum_charge_amount
+    type: sum
+    sql: ${amount}
+    
+  - measure: average_charge_amount
+    type: average
+    sql: ${amount}  
+
   - measure: count
     type: count
     drill_fields: [id, source__name, card__name]
