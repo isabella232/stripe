@@ -1,5 +1,5 @@
 - view: stripe_charges
-  sql_table_name: stripeblook.stripe_charges
+  sql_table_name: stripeblook.stripe_charges # https://stripe.com/docs/api/curl#charge_object
   fields:
 
   - dimension: id
@@ -11,9 +11,13 @@
     type: number
     sql: ${TABLE}._rjm_batched_at
 
-  - dimension: amount
+  - dimension: amount 
+    # A positive integer in the smallest currency unit 
+    # (e.g., 100 cents to charge $1.00 or 100 to charge ¥100, a 0-decimal currency) representing how much to charge. 
+    # The minimum amount is $0.50 US or equivalent in charge currency.
+    # NEEDED: This will need to be more flexible to account for various currencies other than USD.
     type: number
-    sql: ${TABLE}.amount
+    sql: ${TABLE}.amount / 100 # The integer is in cents.
 
   - dimension: amount_refunded
     type: number
