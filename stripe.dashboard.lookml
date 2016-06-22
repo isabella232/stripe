@@ -6,9 +6,9 @@
 #  filters:
 
   elements:
-
-  - name: add_a_unique_name_1466620180411
-    title: Untitled Visualization
+  
+  - name: add_a_unique_name_1466620315406
+    title: "# of charges and sum of amount charged"
     type: looker_column
     model: stripe
     explore: stripe_charges
@@ -18,13 +18,15 @@
     limit: 500
     stacking: ''
     colors: ['#62bad4', '#a9c574', '#929292', '#9fdee0', '#1f3e5a', '#90c8ae', '#92818d',
-      '#c5c6a6', '#82c2ca', '#cee0a0', '#928fb4', '#9fc190']
+    '#c5c6a6', '#82c2ca', '#cee0a0', '#928fb4', '#9fc190']
     show_value_labels: false
     label_density: 25
     legend_position: center
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_view_names: true
+    series_types:
+    stripe_charges.count: line
     limit_displayed_rows: false
     y_axis_combined: false
     show_y_axis_labels: false
