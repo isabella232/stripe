@@ -37,4 +37,7 @@
     x_axis_scale: auto
     y_axis_scale_mode: linear
     show_null_labels: false
+    series_types:
+      stripe_charges.count: line
+      stripe_charges.sum_charge_amount: column
 
