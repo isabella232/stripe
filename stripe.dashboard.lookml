@@ -6,7 +6,7 @@
 #  filters:
 
   elements:
-  
+
   - name: add_a_unique_name_1466620315406
     title: "# of charges and sum of amount charged"
     type: looker_column
@@ -40,4 +40,3 @@
     series_types:
       stripe_charges.count: line
       stripe_charges.sum_charge_amount: column
-
