@@ -1,6 +1,6 @@
 view: stripe_charges {
   # https://stripe.com/docs/api/curl#charge_object
-  sql_table_name: stripeblook.stripe_charges ;;
+  sql_table_name: stripe_demo.stripe_charges ;;
 
   dimension: id {
     primary_key: yes

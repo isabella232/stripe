@@ -1,5 +1,5 @@
 view: stripe_balance_history__fee_details {
-  sql_table_name: stripeblook.stripe_balance_history__fee_details ;;
+  sql_table_name: stripe_demo.stripe_balance_history__fee_details ;;
 
   dimension: _rjm_batched_at {
     type: number

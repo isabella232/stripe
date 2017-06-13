@@ -1,6 +1,6 @@
 view: stripe_transfers {
   # https://stripe.com/docs/api/curl#transfer_object
-  sql_table_name: stripeblook.stripe_transfers ;;
+  sql_table_name: stripe_demo.stripe_transfers ;;
 
   dimension: id {
     primary_key: yes

@@ -1,5 +1,5 @@
 view: stripe_events__data__object__transactions__data__fee_details {
-  sql_table_name: stripeblook.stripe_events__data__object__transactions__data__fee_details ;;
+  sql_table_name: stripe_demo.stripe_events__data__object__transactions__data__fee_details ;;
 
   dimension: _rjm_batched_at {
     type: number

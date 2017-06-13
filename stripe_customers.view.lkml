@@ -1,5 +1,5 @@
 view: stripe_customers {
-  sql_table_name: stripeblook.stripe_customers ;;
+  sql_table_name: stripe_demo.stripe_customers ;;
 
   dimension: id {
     primary_key: yes

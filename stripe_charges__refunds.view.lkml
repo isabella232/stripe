@@ -1,5 +1,5 @@
 view: stripe_charges__refunds {
-  sql_table_name: stripeblook.stripe_charges__refunds ;;
+  sql_table_name: stripe_demo.stripe_charges__refunds ;;
 
   dimension: id {
     primary_key: yes

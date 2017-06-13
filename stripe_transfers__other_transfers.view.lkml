@@ -1,5 +1,5 @@
 view: stripe_transfers__other_transfers {
-  sql_table_name: stripeblook.stripe_transfers__other_transfers ;;
+  sql_table_name: stripe_demo.stripe_transfers__other_transfers ;;
 
   dimension: _rjm_batched_at {
     type: number

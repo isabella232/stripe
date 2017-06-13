@@ -1,5 +1,5 @@
 view: stripe_invoices {
-  sql_table_name: stripeblook.stripe_invoices ;;
+  sql_table_name: stripe_demo.stripe_invoices ;;
 
   dimension: id {
     primary_key: yes

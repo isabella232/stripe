@@ -1,5 +1,5 @@
 view: stripe_subscriptions {
-  sql_table_name: stripeblook.stripe_subscriptions ;;
+  sql_table_name: stripe_demo.stripe_subscriptions ;;
 
   dimension: id {
     primary_key: yes

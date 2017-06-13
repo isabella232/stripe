@@ -1,5 +1,5 @@
 view: stripe_balance_history {
-  sql_table_name: stripeblook.stripe_balance_history ;;
+  sql_table_name: stripe_demo.stripe_balance_history ;;
 
   dimension: id {
     primary_key: yes

@@ -1,5 +1,5 @@
 view: stripe_charges__fee_details {
-  sql_table_name: stripeblook.stripe_charges__fee_details ;;
+  sql_table_name: stripe_demo.stripe_charges__fee_details ;;
 
   dimension: _rjm_batched_at {
     type: number

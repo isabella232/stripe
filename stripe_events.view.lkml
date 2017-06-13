@@ -1,5 +1,5 @@
 view: stripe_events {
-  sql_table_name: stripeblook.stripe_events ;;
+  sql_table_name: stripe_demo.stripe_events ;;
 
   dimension: id {
     primary_key: yes
