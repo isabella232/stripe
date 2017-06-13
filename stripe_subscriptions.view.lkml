@@ -20,21 +20,21 @@ view: stripe_subscriptions {
   dimension_group: canceled_at {
     type: time
     timeframes: [time, date, week, month]
-    datatype: epoch
+#     datatype: epoch
     sql: ${TABLE}.canceled_at ;;
   }
 
   dimension_group: current_period_end {
     type: time
     timeframes: [time, date, week, month]
-    datatype: epoch
+#     datatype: epoch
     sql: ${TABLE}.current_period_end ;;
   }
 
   dimension_group: current_period_start {
     type: time
     timeframes: [time, date, week, month]
-    datatype: epoch
+#     datatype: epoch
     sql: ${TABLE}.current_period_start ;;
   }
 
@@ -46,7 +46,7 @@ view: stripe_subscriptions {
   dimension_group: ended_at {
     type: time
     timeframes: [time, date, week, month]
-    datatype: epoch
+#     datatype: epoch
     sql: ${TABLE}.ended_at ;;
   }
 
@@ -117,7 +117,7 @@ view: stripe_subscriptions {
   dimension_group: start {
     type: time
     timeframes: [time, date, week, month]
-    datatype: epoch
+#     datatype: epoch
     sql: ${TABLE}.start ;;
   }
 
@@ -129,14 +129,14 @@ view: stripe_subscriptions {
   dimension_group: trial_end {
     type: time
     timeframes: [time, date, week, month]
-    datatype: epoch
+#     datatype: epoch
     sql: ${TABLE}.trial_end ;;
   }
 
   dimension_group: trial_start {
     type: time
     timeframes: [time, date, week, month]
-    datatype: epoch
+#     datatype: epoch
     sql: ${TABLE}.trial_start ;;
   }
 
